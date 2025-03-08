@@ -5,50 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Planner</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
-    <div class="container">
-        <h1>ROUTE PLANNER</h1>
-
-        <div class="form-container">
-            <!-- Location Name -->
-            <div class="input-row">
+    <h1>ROUTE PLANNER</h1>
+    
+    <div class="form-container">
+        <!-- Location Name Row -->
+        <div class="input-row">
+            <div class="label-container">
                 <label>Location Name:</label>
+            </div>
+            <div class="field-container">
                 <input type="text">
                 <button>Add Location</button>
             </div>
-
-            <!-- From/To -->
-            <div class="input-row">
+        </div>
+        
+        <!-- From/To Row -->
+        <div class="input-row">
+            <div class="label-container">
                 <label>From:</label>
+            </div>
+            <div class="field-container">
                 <input type="text">
                 <label>TO:</label>
                 <input type="text">
             </div>
-
-            <!-- Distance -->
-            <div class="input-row">
+        </div>
+        
+        <!-- Distance Row -->
+        <div class="input-row">
+            <div class="label-container">
                 <label>Distance:</label>
+            </div>
+            <div class="field-container">
                 <input type="text">
                 <button>Add Distance</button>
             </div>
-
-            <!-- Start Location -->
-            <div class="input-row">
+        </div>
+        
+        <!-- Start Location Row -->
+        <div class="input-row">
+            <div class="label-container">
                 <label>Start Location:</label>
+            </div>
+            <div class="field-container">
                 <input type="text">
             </div>
-
-            <!-- Find Best Route -->
-            <div class="input-row">
-                <button class="full-width">Find Best Route</button>
+        </div>
+        
+        <!-- Find Best Route Row -->
+        <div class="input-row">
+            <div class="label-container"></div>
+            <div class="field-container">
+                <button>Find Best Route</button>
             </div>
-
-            <!-- Best Route -->
-            <div class="input-row best-route">
+        </div>
+        
+        <!-- Best Route Row -->
+        <div class="input-row best-route">
+            <div class="label-container">
                 <label>Best Route:</label>
-                <p></p> <!-- Route result will be displayed here -->
+            </div>
+            <div class="field-container">
+                <p></p> <!-- This will be filled with the route result -->
             </div>
         </div>
     </div>
