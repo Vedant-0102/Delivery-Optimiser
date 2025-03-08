@@ -1,0 +1,120 @@
+/* Import a cool futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('https://i.pinimg.com/originals/7b/75/dd/7b75dda9fc31b009e65fb6eeb2b0e832.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #ff3b3b; /* Neon Red */
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay Box for Delivery Route Optimizer */
+.overlay-box {
+    background: rgba(0, 0, 0, 0.2); /* 70% transparent black */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 65%;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+}
+
+/* Ensure all text and form elements inside the box stay visible */
+.overlay-box h1,
+.overlay-box label,
+.overlay-box input,
+.overlay-box button {
+    position: relative;
+    z-index: 1;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff3b3b;
+    text-shadow: 0 0 15px #ff3b3b, 0 0 30px #ff0000; /* Neon Glow */
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Input Row */
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    color: #ff3b3b;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* Inputs */
+input {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ff3b3b;
+    color: #ff3b3b;
+    font-size: 16px;
+    padding: 10px;
+    width: 15cm;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #eb4646, #e48f10);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #ff0000, #ff6600);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff3b3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overlay-box {
+        width: 80%;
+        padding: 30px;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+    input, button {
+        width: 100%;
+    }
+}
