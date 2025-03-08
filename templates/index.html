@@ -6,7 +6,7 @@
     <title>Route Planner</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
     <h1>ROUTE PLANNER</h1>
@@ -15,44 +15,44 @@
         <!-- Location Name Row -->
         <div class="input-row">
             <div class="label-container">
-                <label>Location Name:</label>
+                <label for="locationInput">Location Name:</label>
             </div>
             <div class="field-container">
-                <input type="text">
-                <button>Add Location</button>
+                <input type="text" id="locationInput">
+                <button onclick="addLocation()">Add Location</button>
             </div>
         </div>
         
         <!-- From/To Row -->
         <div class="input-row">
             <div class="label-container">
-                <label>From:</label>
+                <label for="fromInput">From:</label>
             </div>
             <div class="field-container">
-                <input type="text">
-                <label>TO:</label>
-                <input type="text">
+                <input type="text" id="fromInput">
+                <label for="toInput">TO:</label>
+                <input type="text" id="toInput">
             </div>
         </div>
         
         <!-- Distance Row -->
         <div class="input-row">
             <div class="label-container">
-                <label>Distance:</label>
+                <label for="distanceInput">Distance:</label>
             </div>
             <div class="field-container">
-                <input type="text">
-                <button>Add Distance</button>
+                <input type="text" id="distanceInput">
+                <button onclick="addDistance()">Add Distance</button>
             </div>
         </div>
         
         <!-- Start Location Row -->
         <div class="input-row">
             <div class="label-container">
-                <label>Start Location:</label>
+                <label for="startInput">Start Location:</label>
             </div>
             <div class="field-container">
-                <input type="text">
+                <input type="text" id="startInput">
             </div>
         </div>
         
@@ -60,7 +60,7 @@
         <div class="input-row">
             <div class="label-container"></div>
             <div class="field-container">
-                <button>Find Best Route</button>
+                <button onclick="calculateBestRoute()">Find Best Route</button>
             </div>
         </div>
         
@@ -70,7 +70,7 @@
                 <label>Best Route:</label>
             </div>
             <div class="field-container">
-                <p></p> <!-- This will be filled with the route result -->
+                <p id="routeResult"></p> <!-- This will be filled with the route result -->
             </div>
         </div>
     </div>
