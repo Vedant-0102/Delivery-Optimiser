@@ -32,7 +32,7 @@ This is a Streamlit-based web application that optimizes delivery routes using t
 - Streamlit
 
 ## 📷 Screenshot
-![App Screenshot](screenshot.png) *(Add a screenshot here)*
+![Landing Page](https://github.com/Vedant-0102/Delivery-Optimiser/blob/main/assets/Landing.png) 
 
 ## 📜 License
 This project is publicly accessible, but the code is not available for reuse or modification.
